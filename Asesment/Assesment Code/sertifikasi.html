@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assesment BPPTIK</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- SCRIPT LIBRARY SUMMERNOTE TEXT EDITOR -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    
+    
+</head>
+<body>
+	
+	<!-- bagian header template -->
+	<header>
+		<!-- <h1 class="judul">Malas Ngoding's Blog</h1>
+		<p class="deskripsi">Tutorial pemrograman web, mobile dan desktop lengkap berbahasa indonesia. dari dasar hingga mahir.</p> -->
+        <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2017/02/logo-bpptik-02-big.png" height="60px" width="240px" >
+      
+	</header>
+	<!-- akhir bagian header template -->
+    <!-- bagian menu		 -->
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				
+                <li>
+					<div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Profil</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="profil_singkat.html">Profil Singkat</a>
+                          <a href="tugas_fungsi.html">Tugas dan Fungsi</a>
+					      <a href="struktur.html">Struktur Organisasi</a>
+                        </div>
+                      </div>
+				</li>
+				<li>
+					<a href="pelatihan.html">Pelatihan</a>
+				</li>
+                <li>
+					<a href="sertifikasi.html">Sertifikasi</a>
+				</li>
+                <li>
+                    <a href="berita.html">Berita</a>
+                </li>
+			</ul>
+		</nav>
+		<!-- akhir bagian menu -->
+	
+	<div class="wrap">
+ 
+		<!-- bagian sidebar website -->
+		<aside class="sidebar">
+			<div class="widget">
+				<!-- <h2>Tutorial</h2>
+				<p>Selamat datang di www.malasngoding.com, situs ini menyediakan tutorial pemrograman web, mobile & desktop.</p> -->
+                <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2021/02/xPelatihan-Teknis-bidang-TIK.jpg.pagespeed.ic.Tk6cXGUidA.jpg" height="120px" width="220px" >
+            </div>
+            <div class="widget">
+				<!-- <h2>Tutorial</h2>
+				<p>Selamat datang di www.malasngoding.com, situs ini menyediakan tutorial pemrograman web, mobile & desktop.</p> -->
+                <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2021/06/xPelatihan-dan-Sertifikasi-SKKNI-Gratis-300x138.png.pagespeed.ic.oGHGjuR2E0.webp" height="100px" width="220px" >
+            </div>
+			<div class="widget">
+				<h2>Link Terkait</h2>
+                <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2014/10/xlan-kecil.png.pagespeed.ic.FO_jN5UgdM.webp" height="40px" width="50px" >
+                <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2014/10/xkominfo-kecil.png.pagespeed.ic.FMIQKNPish.webp" height="45px" width="60px" >
+                <img src="https://bpptik.kominfo.go.id/wp-content/uploads/2014/11/xbnsp-kcl.png.pagespeed.ic.edJU-vJZ8s.webp" height="40px" width="60px" >
+			</div>
+		</aside>
+		<!-- akhir bagian sidebar website -->
+ 
+		<!-- bagian konten Blog -->
+		<div class="blog">
+			<div class="conteudo">
+				
+				<h1> Sertifikasi Kompetensi Bidang TIK
+                </h1>
+				<hr>
+				<p>
+					Sertifikasi Kompetensi Kerja (selanjutnya disebut Sertifikasi Kompetensi) bidang Teknologi Informasi dan Komunikasi (TIK) di BPPTIK diselenggarakan pasca Pelatihan. Kegiatan Pelatihan dan Sertifikasi dapat dilihat di SIPS BPPTIK (klik di sini).
+                </p>	
+                			
+				<a href="#" class="continue-lendo">Selengkapnya →</a>
+                <div id="summernote"></div>
+     
+           
+		</div>
+		<!-- akhir bagian konten Blog -->  
+        
+	
+    
+    </div>
+
+    <div class="wrapfooter">
+        <div class="blog">
+            <div class="footer">
+                <h4>Info Lainnya</h4>
+                <p>Lokasi Hiburan, Statistika Kominfo<br>aperiam rerum, odio amet vitae molestiae, ullam itaque maiores sed! Vero inventore vel perferendis voluptates numquam recusandae facilis.</p>
+                    
+                    <div class="icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </div>
+        
+                    <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Uswatun Khasanah</p>
+        
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- SCRIPT LIBRARY SUMMERNOTE TEXT EDITOR -->
+    <script>
+        $('#summernote').summernote({
+          placeholder: 'Hello stand alone ui',
+          tabsize: 2,
+          height: 120,
+          toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+          ]
+        });
+      </script>
+    
+      <!-- SCRIPT DROPDOWN -->
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+        
+   
+ 
+</body>
+
+</html>
